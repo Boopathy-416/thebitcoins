@@ -1,0 +1,20 @@
+/* src/components/Navbar.css */
+
+.con   {
+  cursor: pointer;
+  width: auto;
+  font-family: odibee sans ;
+  height: 20px;
+  border: 1px solid rgb(255, 191, 0);
+  background: orange;
+  padding: 0px;
+  color: #000000;
+  border-top: 4px solid black;
+  position: static;
+  transform: rotate(45deg);
+}
+
+
+ 
+  
+ 

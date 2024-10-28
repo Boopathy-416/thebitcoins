@@ -1,0 +1,136 @@
+.Left-image,
+.Right-image {
+  position: absolute;
+  top: 0;
+  width: 50%; /* Take half the width each */
+  height: 100%; /* Full height */
+  background-size: cover; /* Cover the entire area */
+  background-repeat: no-repeat; /* Prevent repeating */
+  z-index: 1;
+}
+
+.Left-image {
+  flex: 1;
+  background: linear-gradient(135deg, #ff8008, #ffc837);
+  overflow: hidden;
+  width: 203px;
+  height: 338px;
+  top: 250px;
+  left: 399px;
+  gap: 0px;
+  opacity: 0px;
+  background-image: url("/src/assets/TheBitcoin.com/r1.png"); /* Replace with your left image */
+}
+
+.Right-image {
+  flex: 1;
+  background: linear-gradient(135deg, #005bea, #00c6fb);
+  overflow: hidden;
+  width: 302px;
+  height: 346px;
+  top: 250px;
+  left: 880px;
+  gap: 0px;
+  opacity: 0px;
+  background-image: url("/src/assets/TheBitcoin.com/b1.png"); /* Replace with your right image */
+}
+/* Keyframe for Shine Flash Effect */
+@keyframes shine {
+  0% {
+    opacity: 0.3;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.3;
+  }
+}
+
+/* Shine Effect for Both Sides */
+.Left-side::before,
+.Right-side::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  z-index: -999;
+}
+
+.Left-side::before {
+  background: linear-gradient(to right, rgb(255, 168, 69) 5%, transparent 50%);
+  animation: shine 6s infinite ease-in-out;
+}
+
+.Right-side::before {
+  background: linear-gradient(
+    to left,
+    rgba(70, 163, 208, 1) 5%,
+    transparent 50%
+  );
+  animation: shine 6s infinite ease-in-out;
+}
+
+/* 2 3 */
+.stone2 {
+  position: absolute;
+  width: 385px;
+  height: 175px;
+  left: -79px;
+  top: 525px;
+  background-image: url("/src/assets/TheBitcoin.com/2 3.png");
+}
+
+
+.stone3 {
+    position: absolute;
+    width: 385px;
+    height: 275px;
+    left: 1060px;
+    top: 497px;
+    background-image: url("/src/assets/TheBitcoin.com/2 3.png");
+}
+
+/* Layer 8 */
+.stone4 {
+    position: absolute;
+    width: 497px;
+    height: 115px;
+    left: 823px;
+    top: 589px;
+    background-image: url("/src/assets/TheBitcoin.com/Layer 8.png");
+}
+
+/* Layer 7 */
+.stone5 {
+    position: absolute;
+    width: 590px;
+    height: 200px;
+    left: 113px;
+    top: 580px;
+    background-image: url("/src/assets/TheBitcoin.com/Layer 8.png");
+}
+
+/* 0002 2 */
+.stonekal {
+    position: absolute;
+    width: 422px;
+    height: 811px;
+    left: 1190px;
+    top: 17px;
+    opacity: 0.8;
+    background-image: url("/src/assets/TheBitcoin.com/0002 1.png");
+    transform: matrix(-1, 0, 0, 1, 0, 0);
+}
+/* 0002 1 */
+.stone1 {
+  position: absolute;
+  width: 422px;
+  height: 811px;
+  left: -19px;
+  top: 17px;
+  opacity: 0.8;
+  background-image: url("/src/assets/TheBitcoin.com/0002 1.png");
+}

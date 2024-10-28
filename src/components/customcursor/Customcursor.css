@@ -1,0 +1,37 @@
+body {
+  cursor: none;
+}
+
+.custom-cursor-element {
+  position: absolute;
+  width: 20px; /* Set the width of the custom cursor */
+  height: 20px; /* Set the height of the custom cursor */
+  background-size: cover; /* Ensure the image covers the element */
+  background-repeat: no-repeat;
+  pointer-events: none; /* Prevent the custom cursor from blocking clicks */
+  z-index: 10000; /* Ensure it's always on top */
+}
+
+   
+ .fade-right {
+  opacity: 0;
+  transform: translateX(-50px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.fade-left {
+  opacity: 0;
+  transform: translateX(50px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.fade-up {
+  opacity: 0;
+  transform: translateY(50px) scale(0.8);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.in-view {
+  opacity: 1;
+  transform: translateX(0) translateY(0) scale(1);
+}

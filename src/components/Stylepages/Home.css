@@ -1,0 +1,81 @@
+@import url("https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Odibee+Sans&display=swap");
+@font-face {
+  font-family: Fellix;
+  src: url("/src/assets/fonts/Fellix-Regular.ttf");
+}
+
+
+p {
+  z-index: 999;
+  margin-top: 10px;
+  padding-top: 20px;
+  font-family:Fellix;
+  font-weight: 300;
+  color: rgba(255, 255, 255);
+  text-align: center;
+  justify-self:stretch;
+  font-size: 16px;
+}
+
+.i {
+  font-family: Exo ;
+  cursor: pointer;
+  padding: 20px;
+  font-weight: 500;
+  background: linear-gradient(#ff873c, #0e0e0e);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+@keyframes arrow-up {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-7px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+b {
+  letter-spacing: 0.7px;
+  background: linear-gradient(#3ec6f6 100%, #0e0e0e 100%);
+  font-weight: 300;
+  font-size: x-large;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+
+tt{
+  letter-spacing: 0.7px;
+  font-weight: 300;
+  font-size: x-large;
+  background: linear-gradient(#ff873c 100%, #0e0e0e 100%);
+  font-family: EXO;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+
+@media (max-width: 768px) {
+ 
+  p , tt , b {
+    font-size: 16px;
+  }
+
+ 
+}
+
+@media (max-width: 480px) {
+  
+
+  p , tt , b {
+    font-size: 16px;
+  }
+
+  
+}

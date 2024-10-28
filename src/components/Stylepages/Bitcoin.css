@@ -1,0 +1,102 @@
+
+
+p {
+    font-family: Exo;
+    font-weight: 300;
+    color: rgb(130, 132, 134);
+    text-align: center;
+  }
+
+  span {
+    background: linear-gradient(#3ec6f6 100%, #0e0e0e 100%);
+    font-weight: THIN;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+
+  
+  .thin {
+    
+    font-family: Exo;
+    cursor: pointer;
+    font-weight: 300;
+    background: linear-gradient(#ff873c, #0e0e0e);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  .img {
+    height: auto;
+    width: 25px;
+    animation: arrow-up 1s infinite ease-in-out; /* Arrow up animation */
+  }
+  
+  @keyframes arrow-up {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-7px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+  
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Container styling */
+  .framer-9ypidp {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    color: white;
+    background-color: black;
+    overflow: hidden;
+  }
+  
+  /* Text styling and smoke animation */
+  .framer-text span {
+    display: inline-block;
+    font-family: "Fellix", sans-serif;
+    font-size: 1.5rem;
+    line-height: 1.6;
+    animation-name: smokeEffect 5s infinite alternate;
+    opacity: 0.8;
+    
+  }
+  
+  /* Smoke animation */
+  @keyframes smokeEffect {
+    0% {
+      opacity: 1;
+      filter: blur(0px);
+      transform: translateY(0);
+    }
+    50% {
+      opacity: 0.7;
+      filter: blur(2px);
+      transform: translateY(-10px);
+    }
+    100% {
+      opacity: 0.3;
+      filter: blur(5px);
+      transform: translateY(-30px);
+    }
+  }
+  
+  /* Media query for mobile responsiveness */
+  @media screen and (max-width: 768px) {
+    .framer-text span {
+      font-size: 1.2rem;
+    }
+  }
